@@ -1,9 +1,9 @@
 # Eghtesad Novin Ckeckout:
 Unofficial [Novin Pardakht - Eghtesad Novin Gateway](https://www.pna.co.ir) implementation in Node.JS
 
-Warning: Eghtesad Novin gateway API's are not resistant and they will change without notifing users.
+Warning: Eghtesad Novin gateway API's are not persistent and they will change without notifing users.
 
-This module needed `openssl` installed on your computer (or server) and configured as environment variable. (pre installed on most linux distros - except light weight docker images)  
+This module needs `openssl` installed on your computer (or server) and should be visible in `$PATH`. (Pre-installed on most linux distros - except light weight docker images)  
 
 Notice: They are not checking IP's so you can test it on your development machine.
 
@@ -61,7 +61,7 @@ eghtesadNovin.requestPaymentToken(
 ```
 
 After making Post request to bank URL, user will follow bank instructions then he will posted to your callbackUrl, make sure that your endpoint should accept Post method.  
-These parameters will eb accesible via bank Post request in endpoint:
+These parameters will be accesible via bank Post request in endpoint:
   - State // if payment is successfull they will send "ok" string (do toLowerCase to avoid furture problems)
   - token // same as your request
   - RefNum // use to finalize payment
