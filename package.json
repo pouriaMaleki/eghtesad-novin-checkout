@@ -8,7 +8,7 @@
   },
   "scripts": {
     "start": "lsc -w -o ./lib/ ./src",
-    "prepublish": "lsc -o ./lib ./src"
+    "prepare": "lsc -o ./lib ./src"
   },
   "repository": {
     "type": "git",
