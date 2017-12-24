@@ -2,13 +2,13 @@
   "name": "eghtesad-novin-checkout",
   "version": "1.0.0",
   "description": "Unofficial NodeJS implementation of Novin Pardakht Eghtesad Novin Gateway API",
-  "main": "./lib/index.js",
+  "main": "./lib/rc/index.js",
   "directories": {
     "lib": "lib"
   },
   "scripts": {
-    "start": "webpack",
-    "build": "webpack -p"
+    "start": "lsc -w -o ./lib/ ./src",
+    "build": "lsc -o ./lib ./src"
   },
   "repository": {
     "type": "git",
@@ -28,11 +28,10 @@
   },
   "homepage": "https://github.com/pouriaMaleki/eghtesad-novin-checkout#readme",
   "devDependencies": {
-    "livescript-loader": "^0.1.6",
-    "webpack": "^3.10.0"
+    "livescript": "^1.5.0"
   },
   "dependencies": {
     "debug": "^3.1.0",
-    "easysoap": "1.0.6"
+    "easysoap": "^1.0.6"
   }
 }

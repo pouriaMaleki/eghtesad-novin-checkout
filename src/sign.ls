@@ -1,5 +1,6 @@
 require! {
   'child_process': { spawn }
+  'debug'
 }
 
 # this function signs a data using
