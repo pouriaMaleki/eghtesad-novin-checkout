@@ -1,0 +1,9 @@
+/xeno
+/node_modules
+/.vscode
+/src
+
+**/.DS_Store
+**.log
+*.log
+*.log.*
