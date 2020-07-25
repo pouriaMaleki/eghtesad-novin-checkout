@@ -1,4 +1,5 @@
 require! {
+  'when': wn
   'easysoap'
   'debug'
   './sign'

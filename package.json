@@ -1,6 +1,6 @@
 {
   "name": "eghtesad-novin-checkout",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Unofficial NodeJS implementation of Novin Pardakht Eghtesad Novin Gateway API",
   "main": "./lib/rc/index.js",
   "directories": {
@@ -32,6 +32,7 @@
   },
   "dependencies": {
     "debug": "^3.1.0",
-    "easysoap": "^1.0.6"
+    "easysoap": "^1.0.6",
+    "when": "^3.7.8"
   }
 }
