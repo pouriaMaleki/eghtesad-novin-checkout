@@ -1,4 +1,5 @@
 require! {
+  'when': wn
   'child_process': { spawn }
   'debug'
 }
