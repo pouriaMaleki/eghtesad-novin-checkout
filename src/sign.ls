@@ -30,7 +30,7 @@ module.exports = (dataToSign, pemKeyAddress) ->
     result := result + data.toString('utf8')
 
   proc.stdout.on 'end', (end) ->
-    resolve result.split("\n\n")[1]
+    resolve result.split(/\r?\n\r?\n/gm)[1]
 
   errorData = ""
   proc.stderr.on 'data', (data) ->
