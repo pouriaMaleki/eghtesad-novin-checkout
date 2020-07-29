@@ -67,7 +67,7 @@ Here is an example of client side.
  <body>
   <script>
    var f = document.createElement('form');
-   f.action='https://pna.shaparak.ir/_ipgw_/payment/';
+   f.action='https://pna.shaparak.ir/_ipgw_/payment/';      // back endpoint 
    f.method='POST';
 
    var i=document.createElement('input');
