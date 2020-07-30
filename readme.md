@@ -60,6 +60,35 @@ eghtesadNovin.requestPaymentToken(
 });
 ```
 
+#### Client side:
+Here is an example of client side.
+```html
+<html>
+ <body>
+  <script>
+   var f = document.createElement('form');
+   f.action='https://pna.shaparak.ir/_ipgw_/payment/';      // back endpoint 
+   f.method='POST';
+
+   var i=document.createElement('input');
+   i.type='hidden';
+   i.name='token';
+   i.value='XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX';		// your bank token
+   f.appendChild(i);
+
+   var j=document.createElement('input');
+   j.type='hidden';
+   j.name='language';
+   j.value='fa';
+   f.appendChild(j);
+
+   document.body.appendChild(f);
+   f.submit();
+  </script>
+ </body>
+</html>
+```
+
 After making Post request to bank URL, user will follow bank instructions then he will posted to your callbackUrl, make sure that your endpoint should accept Post method.  
 These parameters will be accesible via bank Post request in endpoint:
   - State // if payment is successfull they will send "ok" string (do toLowerCase to avoid furture problems)
